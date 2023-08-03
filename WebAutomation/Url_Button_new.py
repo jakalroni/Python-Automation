@@ -147,7 +147,7 @@ class UrlButton:
 
     def cs_button_clicked(self, button_text):
         try:
-            threading.Thread(target=subprocess.run, args=(["python", r"C:\PROJ_PY\Mission2\CS_AutoLogin3.py"],)).start()
+            threading.Thread(target=subprocess.run, args=(["python", r"C:\PROJ_PY\AppAutomation\CS_AutoLogin3.py"],)).start()
             # subprocess.run(["python", r"C:\PROJ_PY\Mission2\CS_AutoLogin3.py"])  # subprocess를 이용하여 CS_AutoLogin3.py를 실행 -> 스레딩 미사용 시, tkinter의 window.mainloop가 멈춤
         except Exception as e:
             print(f"Error: {e}")
